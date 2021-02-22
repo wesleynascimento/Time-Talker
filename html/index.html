@@ -41,6 +41,18 @@ var today=new Date();
 
 		}
 
+function DarkMode() {
+  var element = document.body;
+  var element1 = hero;
+  var element1 = hero;
+
+  element.classList.toggle("hero-dark-mode");
+element1.classList.toggle("hero-dark-mode");
+  botao.classList.toggle("botao-dark-mode");
+ topo.classList.toggle("logo-dark-mode");
+
+
+}
 	
 </script>
 </head>
@@ -48,9 +60,11 @@ var today=new Date();
 
 <div class="container"> 
 
-  <header> <a href="">
+  <header id = "topo" class= "topo"> <a href="">
     <h4 class="logo">RELÓGIO QUE FALA</h4>
     </a>
+<button id = "dark" class= "dark" onclick="DarkMode()">Toggle dark mode</button>
+
     <nav> </nav>
   </header>
   <section class="hero" id="hero" >
@@ -60,14 +74,8 @@ var today=new Date();
 </div>
 	
 	<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
+   
   </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+  
 </body>
 </html>
