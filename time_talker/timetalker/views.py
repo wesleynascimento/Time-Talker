@@ -10,4 +10,4 @@ file_path = os.path.join(BASE_DIR, 'front\cu.html')
 
 def index(request):
     context = {}
-    return render(request, 'timetalker/Untitled-1.html', context)
+    return render(request, 'index.html', context)
